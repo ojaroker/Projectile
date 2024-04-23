@@ -249,7 +249,7 @@ set(gcf,'Color','w')
 v0vals = [4000 5000 6000 7000 7200 7500];
 % endVals for plotting points at stopping location
 % endVals = zeros(6,2);
-counter=1;
+% counter=1; % for endVals
 for i = v0vals
     v0 = i;
     % get simulated trajectory values r,theta
@@ -266,7 +266,7 @@ for i = v0vals
     % endVals(counter,2) = yVals(end);
     % comet for animation:
     % comet(xVals,yVals,.3)
-    counter = counter + 1;
+    % counter = counter + 1;
 end
 legend(char(['v0=' int2str(v0vals(1))]), ...
     char(['v0=' int2str(v0vals(2))]), ...
